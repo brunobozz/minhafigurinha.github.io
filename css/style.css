@@ -1,0 +1,370 @@
+body{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.app{
+    height:100%;
+    width:100%;
+}
+
+.middleBar{
+    
+}
+
+.topBar{
+    width:100%;
+    background-color:#00C17F;
+    height:70px;
+    top:0;
+    position:absolute;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+}
+
+.bottomBar{
+    width:100%;
+    background-color:#ccc;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    z-index:10;
+    bottom:0;
+    position:absolute;
+    box-shadow: 0px -3px 5px rgba(0,0,0,0.5);
+}
+
+.bottomItem{
+    height:70px;
+    background-color:#00C17F;
+    width:20%;
+    background-size:auto 40%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.itemPhoto{background-image:url('../imgs/iconPhoto.svg');}
+.itemSize{background-image:url('../imgs/iconSize.svg');}
+.itemRotate{background-image:url('../imgs/iconRotate.svg');}
+.itemMove{background-image:url('../imgs/iconMove.svg');}
+.itemText{background-image:url('../imgs/iconText.svg');}
+.itemTeam{background-image:url('../imgs/iconTeam.svg');}
+
+.bottomItem.clicked{
+    background-color:#00B16F;
+}
+
+.bottomItem img{
+    height:40%;
+    display:block;
+}
+
+.actions{
+    position:absolute;
+    bottom:70px;
+    width:100%;
+    z-index:30;
+}
+
+.actions [class^="act"]{
+    width:100%;
+    padding:20px;
+    background-color:#00B16F;
+    box-shadow: 0px -3px 3px rgba(0,0,0,0.5);
+}
+
+
+.actions input,
+.actions select{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+    color:#333;
+    background: #fff;
+    display: block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px;
+}
+.actions input[type="button"]{
+    background: #0163ad;
+    color: #fff;
+    height: auto;
+    padding: 10px;
+    line-height: 100%;
+}
+
+
+
+.a3{
+    overflow: hidden;
+    width: 3040px;
+    height: 2050px;
+    position: absolute;
+    background: #fff;
+    /* position: absolute; */
+    z-index: -5;
+}
+
+
+
+
+.hiddenfile {
+ width: 0px;
+ height: 0px;
+ position:absolute;
+ overflow: hidden;
+}
+
+
+
+.figurinha1{
+    /* width: 984px;
+    height: 1281px; */
+    width: 354px;
+    height: 460px;
+    overflow: hidden!important;
+    background: #fff;
+    border: 1px solid #999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+.figurinha2{
+    /* width: 984px;
+    height: 1281px; */
+    width: 590px;
+    height: 768px;
+    overflow: hidden!important;
+    background: #fff;
+    border: 1px solid #999;
+    position:relative;
+}
+.a3 .figurinha{
+    float: left;
+    /* overflow: !important; */
+}
+.figurinha__drag{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.figurinha__foto__size{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+div.figurinha__foto{
+    position: absolute;
+    z-index: 10;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(avatar.jpg); */
+    background-repeat: no-repeat;
+}
+img.figurinha__foto{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.figurinha__mascara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    background-size: 100%;
+    pointer-events: none;
+    background-position: center;
+}
+.figurinha__data,
+.figurinha__nome,
+.figurinha__dados{
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    z-index: 30;
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
+}
+
+.figurinha__data{
+    font-size: 36px;
+    margin-left: 132px;
+    margin-top: 921px;
+    transform: rotate(-9deg);
+}
+.figurinha1 .figurinha__nome{
+    /* font-size: 50px;
+    margin-top: 1111px;
+    width: 871px; */
+    font-size: 20px;
+    margin-top: 398px;
+    width: 312px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.figurinha2 .figurinha__nome{
+    /* font-size: 50px;
+    margin-top: 1111px;
+    width: 871px; */
+    font-size: 58px;
+    margin-top: 1106px;
+    width: 865px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.figurinha__dados{
+    font-size: 34px;
+    margin-left: 110px;
+    margin-top: 1035px;
+    transform: rotate(-25deg);
+}
+
+.figurinha2{
+    height: 1281px;
+    width: 984px;
+    overflow: hidden!important;
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 0px auto;
+    background: #fff;
+    border: 1px solid #999;
+    transform:scale(0.5);
+}
+
+.figurinha1x1{
+    position:relative;
+}
+
+.modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.modal__overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal__area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================RANGE*/
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  border:0;
+  background:transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+/*#############Thumb##############*/
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 36px;
+  width: 36px;
+  background: #fff;
+  cursor: pointer;
+  margin-top: -17px;
+  border-radius:50%;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 36px;
+  width: 36px;
+  background: #fff;
+  cursor: pointer;
+  border-radius:50%;
+}
+
+input[type=range]::-ms-thumb {
+  height: 36px;
+  width: 36px;
+  background: #fff;
+  cursor: pointer;
+  border-radius:50%;
+}
+/*#############Track##############*/
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #333;
+}
+
+input[type=range]:active::-webkit-slider-runnable-track {
+  background: #d6d6d6;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #333;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #ccc;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #ddd;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #ccc;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ddd;
+}
